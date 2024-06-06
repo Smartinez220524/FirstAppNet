@@ -23,8 +23,15 @@ namespace WpfApp1
 
         private void FirstButton_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine(FirstText.Text);
-            MessageBox.Show(FirstText.Text);
+            //Console.WriteLine(FirstText.Text);
+            //MessageBox.Show(FirstText.Text);
+            int result = 0;
+            if (int.TryParse(FirstNumber.Text, out int FirstNumberParse)) {
+                if (int.TryParse(SecondNumber.Text, out int SecondNumberParse)) {
+                    result = FirstNumberParse + SecondNumberParse;
+                }
+            }
+            MessageBox.Show("Result: " + result);
         }
     }
 }

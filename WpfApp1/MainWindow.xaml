@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="FirstAppNet" Height="450" Width="800">
     <Grid Cursor="">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="15*"/>
-        </Grid.ColumnDefinitions>
-        <TextBox x:Name="FirstText" HorizontalAlignment="Left" Margin="11,45,0,337" Width="434" Grid.Column="1">
+        <TextBox x:Name="FirstText" HorizontalAlignment="Left" Margin="36,35,0,347" Width="434" TextWrapping="WrapWithOverflow">
             This is my first application with .NET and C#
         </TextBox>
-        <Button Background="Indigo" Content="First Button" Name="FirstButton" Margin="203,173,410,209" Grid.Column="1" Cursor="Arrow" FontFamily="Segoe UI Semibold" FontSize="16" FontStyle="Italic" BorderBrush="#FF3B0563" Foreground="White" Click="FirstButton_Click" />
+        <Label Content="Number 1" HorizontalAlignment="Left" Margin="31,173,0,226" x:Name="FirstLabel" FontSize="14" FontFamily="Segoe UI Semibold" FontStyle="Italic" Height="35.04" Width="71.8466666666667" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" />
+        <TextBox x:Name="FirstNumber" HorizontalAlignment="Left" Width="51" Margin="36,208,0,182"/>
+        <Label Content="Number 2" HorizontalAlignment="Left" Margin="130,173,0,226" x:Name="SecondLabel" FontSize="14" FontFamily="Segoe UI Semibold" FontStyle="Italic" Width="73.9866666666667" Height="35.04" HorizontalContentAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBox x:Name="SecondNumber" HorizontalAlignment="Left" Width="50" Margin="130,208,0,182"/>
+        <Button Background="Indigo" Content="First Button" Name="FirstButton" Margin="36,113,577,269" Cursor="Arrow" FontFamily="Segoe UI Semibold" FontSize="16" FontStyle="Italic" BorderBrush="#FF3B0563" Foreground="White" Click="FirstButton_Click" />
     </Grid>
 </Window>
